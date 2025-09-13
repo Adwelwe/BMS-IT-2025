@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Flexbox Layout</title>
+  <style> 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      background: aliceblue;
+    }
+
+    .section {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blue { background: blue; }
+    .red { background: red; }
+    .purple { background: purple; }
+    .yellow-green { display: flex; flex: 1; }
+    .yellow { background: yellow; flex: 1; }
+    .green { background: green; flex: 1; }
+
+    .item {
+      background: white;
+      border: 1px solid black;
+      padding: 10px 20px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>Flexbox Layout</header>
+
+  <div class="section blue">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+
+  <div class="section red">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+
+  <div class="section purple">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+  </div>
+
+  <div class="yellow-green">
+    <div class="yellow"></div>
+    <div class="green"></div>
+  </div>
+</body>
+</html>
